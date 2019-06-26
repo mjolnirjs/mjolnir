@@ -3,5 +3,21 @@
   "private": true,
   "devDependencies": {
     "lerna": "^3.15.0"
-  }
+  },
+  "scripts": {
+    "lerna": "lerna",
+    "bootstrap": "lerna bootstrap",
+    "update": "lerna updated",
+    "publish": "lerna publish",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mjolnirjs/mjolnir.git"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mjolnirjs/mjolnir"
+  },
+  "homepage": "https://github.com/mjolnirjs/mjolnir#readme"
 }

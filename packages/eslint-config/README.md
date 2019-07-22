@@ -6,9 +6,7 @@
 按环境区分使用
 
 ### es6 (默认)
-
-#### 安装依赖
-`npm i -D @mjolnir/eslint-config eslint eslint-plugin-node`
+`npm i -D @mjolnir/eslint-config eslint eslint-plugin-import`
 
 #### 配置
 ```json
@@ -18,3 +16,69 @@
   ]
 }
 ```
+
+
+### Node.js
+`npm i -D @mjolnir/eslint-config eslint eslint-plugin-node`
+
+#### 配置
+```json
+{
+  "extends": [
+    "@mjolnir/eslint-config/node"
+  ]
+}
+```
+
+### Babel (ES)
+`npm i -D @mjolnir/eslint-config eslint eslint-plugin-import babel-eslint eslint-plugin-babel`
+
+#### 配置
+```json
+{
+  "extends": [
+    "@mjolnir/eslint-config/babel"
+  ]
+}
+```
+
+### TypeScript
+`npm i -D @mjolnir/eslint-config eslint eslint-plugin-import @typescript-eslint/parser @typescript-eslint/eslint-plugin`
+
+#### 配置
+```json
+{
+  "extends": [
+    "@mjolnir/eslint-config/typescript"
+  ]
+}
+```
+
+### React
+`npm i -D @mjolnir/eslint-config eslint eslint-plugin-import babel-eslint eslint-plugin-babel eslint-plugin-react eslint-plugin-react-hook`
+
+#### 配置
+```json
+{
+  "extends": [
+    "@mjolnir/eslint-config/babel",
+    "@mjolnir/eslint-config/react"
+  ]
+}
+```
+
+
+
+### React with TypeScript
+`npm i -D @mjolnir/eslint-config eslint eslint-plugin-import @typescript-eslint/parser @typescript-eslint/eslint-plugin eslint-plugin-react eslint-plugin-react-hook`
+
+#### 配置
+```json
+{
+  "extends": [
+    "@mjolnir/eslint-config/typescript",
+    "@mjolnir/eslint-config/react"
+  ]
+}
+```
+

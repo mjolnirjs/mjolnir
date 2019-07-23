@@ -56,3 +56,6 @@ jspm_packages/
 
 # lerna
 /packages/*/node_modules
+
+.changelog/
+lerna-debug.log

@@ -7,6 +7,7 @@
   },
   "scripts": {
     "lerna": "lerna",
+    "changelog": "lerna-changelog",
     "bootstrap": "lerna bootstrap",
     "update": "lerna updated",
     "publish": "lerna publish",

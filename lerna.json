@@ -1,4 +1,8 @@
 {
+  "changelog": {
+    "repo": "mjolnirjs/mjolnir",
+    "cacheDir": ".changelog"
+  },
   "packages": [
     "packages/*"
   ],

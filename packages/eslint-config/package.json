@@ -1,6 +1,6 @@
 {
   "name": "@mjolnir/eslint-config",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "eslint config collect",
   "main": "index.js",
   "repository": {
@@ -18,11 +18,10 @@
     "javascript"
   ],
   "license": "MIT",
-  "dependencies": {},
   "devDependencies": {
     "eslint": "^5.16.0",
-    "eslint-plugin-node": "^9.1.0",
     "eslint-config-prettier": "^4.3.0",
+    "eslint-plugin-node": "^9.1.0",
     "eslint-plugin-prettier": "^3.1.0",
     "prettier": "^1.17.1"
   },

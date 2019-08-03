@@ -1,15 +1,15 @@
 {
   "name": "root",
   "private": true,
+  "workspaces": [
+    "packages/*"
+  ],
   "devDependencies": {
     "lerna": "^3.15.0",
     "lerna-changelog": "^0.8.2"
   },
   "scripts": {
-    "lerna": "lerna",
     "changelog": "lerna-changelog",
-    "bootstrap": "lerna bootstrap",
-    "update": "lerna updated",
     "publish": "lerna publish",
     "test": "echo \"Error: no test specified\" && exit 1"
   },

@@ -1,6 +1,6 @@
 module.exports = {
   extends: [
-    './node.js',
+    "@mjolnir/node",
     "plugin:prettier/recommended"
   ]
 };

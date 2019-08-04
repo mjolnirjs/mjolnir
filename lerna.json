@@ -3,9 +3,6 @@
     "repo": "mjolnirjs/mjolnir",
     "cacheDir": ".changelog"
   },
-  "packages": [
-    "packages/*"
-  ],
   "npmClient": "yarn",
   "version": "independent",
   "useWorkspaces": true

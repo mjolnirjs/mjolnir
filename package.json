@@ -1,16 +1,23 @@
 {
   "name": "root",
   "private": true,
+  "workspaces": [
+    "packages/*"
+  ],
   "devDependencies": {
+    "@mjolnir/eslint-config": "link:packages/eslint-config",
+    "eslint": "^5.16.0",
+    "eslint-config-prettier": "^4.3.0",
+    "eslint-plugin-node": "^9.1.0",
+    "eslint-plugin-prettier": "^3.1.0",
     "lerna": "^3.15.0",
-    "lerna-changelog": "^0.8.2"
+    "lerna-changelog": "^0.8.2",
+    "prettier": "^1.17.1"
   },
   "scripts": {
-    "lerna": "lerna",
     "changelog": "lerna-changelog",
-    "bootstrap": "lerna bootstrap",
-    "update": "lerna updated",
     "publish": "lerna publish",
+    "lint": "eslint . --ext js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {

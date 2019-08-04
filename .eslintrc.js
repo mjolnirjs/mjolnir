@@ -1,6 +1,6 @@
 module.exports = {
   extends: [
-    "@mjolnir/node",
+    "@mjolnir/eslint-config/node",
     "plugin:prettier/recommended"
   ]
 };

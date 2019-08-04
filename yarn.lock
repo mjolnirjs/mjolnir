@@ -768,8 +768,9 @@
     npmlog "^4.1.2"
     write-file-atomic "^2.3.0"
 
-"@mjolnir/eslint-config@file:packages/eslint-config":
-  version "0.0.2"
+"@mjolnir/eslint-config@link:packages/eslint-config":
+  version "0.0.0"
+  uid ""
 
 "@mrmlnc/readdir-enhanced@^2.2.1":
   version "2.2.1"

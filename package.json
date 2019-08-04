@@ -5,7 +5,7 @@
     "packages/*"
   ],
   "devDependencies": {
-    "@mjolnir/eslint-config": "file:packages/eslint-config",
+    "@mjolnir/eslint-config": "link:packages/eslint-config",
     "eslint": "^5.16.0",
     "eslint-config-prettier": "^4.3.0",
     "eslint-plugin-node": "^9.1.0",

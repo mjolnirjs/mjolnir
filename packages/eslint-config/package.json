@@ -11,6 +11,9 @@
   "bugs": {
     "url": "https://github.com/mjolnirjs/mjolnir/issues"
   },
+  "scripts": {
+    "test": "prettier --version"
+  },
   "keywords": [
     "eslint",
     "config",

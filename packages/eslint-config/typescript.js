@@ -1,8 +1,6 @@
 'use strict';
 
+// for typescript env, base on es6 env
 module.exports = {
-  extends: [
-    './index', // 基于 es6 的配置
-    './plugins/typescript'
-  ].map(require.resolve)
+  extends: ['./index', './plugins/typescript'].map(require.resolve)
 };

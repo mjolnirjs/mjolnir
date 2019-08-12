@@ -1,8 +1,6 @@
 'use strict';
 
+// for babel env, base on es6 env
 module.exports = {
-  extends: [
-    './index', // 基于 es6 的配置
-    './plugins/babel'
-  ].map(require.resolve)
+  extends: ['./index', './plugins/babel'].map(require.resolve)
 };

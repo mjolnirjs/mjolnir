@@ -12,7 +12,7 @@
     "url": "https://github.com/mjolnirjs/mjolnir/issues"
   },
   "scripts": {
-    "lint": "eslint --print-config"
+    "lint": "eslint --print-config ./index.js"
   },
   "keywords": [
     "eslint",
@@ -29,8 +29,5 @@
   },
   "engines": {
     "node": ">=8.0.0"
-  },
-  "dependencies": {
-    "eslint": "^6.1.0"
   }
 }

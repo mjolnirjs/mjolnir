@@ -2,12 +2,7 @@
 
 // for nodejs env, support es6+ syntax
 module.exports = {
-  env: {
-    node: true,
-    commonjs: true
-  },
+  root: true, // limit ESLint to a specific project
   extends: ['./rules', './plugins/node'].map(require.resolve),
-  rules: {
-    strict: 'error'
-  }
+  rules: {}
 };

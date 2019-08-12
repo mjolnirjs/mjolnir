@@ -2,7 +2,6 @@
 
 // for jest env
 module.exports = {
-  env: {},
-  extends: ['./rules', './plugins/jest'].map(require.resolve),
+  extends: ['./index', './plugins/jest'].map(require.resolve),
   rules: {}
 };

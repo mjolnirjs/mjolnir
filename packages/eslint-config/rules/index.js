@@ -1,10 +1,14 @@
-// rules 里面是符合 eslint 的一些推荐规则，基于 airbnb
+'use strict';
+
+// 基于 eslint:recommend, 自定义的规则按类别维护
 module.exports = {
   extends: [
+    './recommend',
     './best-practices',
     './errors',
     './es6',
     './style',
     './variables'
-  ].map(require.resolve)
+  ].map(require.resolve),
+  rules: {}
 };

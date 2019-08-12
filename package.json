@@ -17,7 +17,7 @@
   "scripts": {
     "changelog": "lerna-changelog",
     "publish": "lerna publish",
-    "lint": "eslint . --ext js",
+    "lint": "eslint --ext .js ./",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {

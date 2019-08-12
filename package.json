@@ -7,7 +7,7 @@
   "devDependencies": {
     "@mjolnir/eslint-config": "link:packages/eslint-config",
     "eslint": "^6.1.0",
-    "eslint-config-prettier": "^4.3.0",
+    "eslint-config-prettier": "^6.0.0",
     "eslint-plugin-node": "^9.1.0",
     "eslint-plugin-prettier": "^3.1.0",
     "lerna": "^3.15.0",

@@ -1,4 +1,12 @@
 // for nodejs env, support es6+ syntax
+'use strict';
+
 module.exports = {
-  extends: ['./rules', './plugins/node'].map(require.resolve)
+  env: {
+    node: true
+  },
+  extends: ['./rules', './plugins/node'].map(require.resolve),
+  rules: {
+    strict: 'error'
+  }
 };

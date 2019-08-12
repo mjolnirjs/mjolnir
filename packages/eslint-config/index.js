@@ -1,3 +1,5 @@
+'use strict';
+
 // for es6 env
 module.exports = {
   parserOptions: {

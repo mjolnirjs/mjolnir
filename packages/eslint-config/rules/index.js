@@ -6,6 +6,7 @@
 
 module.exports = {
   extends: [
+    './recommend',
     './best-practices',
     './errors',
     './es6',

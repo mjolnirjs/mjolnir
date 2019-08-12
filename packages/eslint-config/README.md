@@ -82,3 +82,10 @@
 }
 ```
 
+### jest 环境
+`npm i -D @mjolnir/eslint-config eslint eslint-plugin-jest`
+
+#### 配置
+```json
+
+```

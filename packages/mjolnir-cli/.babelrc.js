@@ -5,7 +5,8 @@ module.exports = {
       '@mjolnir/babel-preset',
       {
         react: false,
-        typescript: true
+        typescript: true,
+        modules: "commonjs"
       }
     ]
   ]

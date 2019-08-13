@@ -1,0 +1,31 @@
+{
+  "name": "@mjolnir/mjolnir-cli",
+  "version": "0.0.1",
+  "description": "",
+  "main": "dist/index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mjolnirjs/mjolnir/tree/master/packages/mjolnir-cli"
+  },
+  "homepage": "https://github.com/mjolnirjs/mjolnir/tree/master/packages/mjolnir-cli",
+  "bugs": {
+    "url": "https://github.com/mjolnirjs/mjolnir/issues"
+  },
+  "scripts": {
+    "type-check": "tsc --noEmit",
+    "type-check:watch": "npm run type-check -- --watch",
+    "build": "npm run build:types && npm run build:js",
+    "build:types": "tsc --emitDeclarationOnly",
+    "build:js": "cross-env NODE_ENV=production babel --root-mode upward src -d dist --extensions \".ts,.tsx\""
+  },
+  "keywords": [],
+  "license": "MIT",
+  "publishConfig": {
+    "access": "public"
+  },
+  "engines": {
+    "node": ">=8.0.0"
+  },
+  "devDependencies": {},
+  "dependencies": {}
+}

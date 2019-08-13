@@ -5,17 +5,23 @@
     "packages/*"
   ],
   "devDependencies": {
+    "@babel/cli": "^7.5.5",
+    "@babel/core": "^7.5.5",
+    "@mjolnir/babel-preset": "link:packages/babel-preset",
     "@mjolnir/eslint-config": "link:packages/eslint-config",
+    "cross-env": "^5.2.0",
     "eslint": "^6.1.0",
     "eslint-config-prettier": "^6.0.0",
     "eslint-plugin-node": "^9.1.0",
     "eslint-plugin-prettier": "^3.1.0",
     "lerna": "^3.15.0",
     "lerna-changelog": "^0.8.2",
-    "prettier": "^1.17.1"
+    "prettier": "^1.17.1",
+    "typescript": "^3.5.3"
   },
   "scripts": {
     "changelog": "lerna-changelog",
+    "build": "lerna run build",
     "publish": "lerna publish",
     "lint": "eslint --ext .js ./",
     "test": "echo \"Error: no test specified\" && exit 1"

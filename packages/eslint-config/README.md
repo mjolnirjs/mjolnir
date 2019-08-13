@@ -2,13 +2,28 @@
 
 适用于 node/es/ts/react 环境下的 eslint 配置集合。
 
-## 使用说明
-按环境区分使用
+## 说明
+### requirement
+- eslint@6
 
+### 包含的插件
+- "@typescript-eslint/eslint-plugin": "^1.13.0"
+- "@typescript-eslint/parser": "^1.13.0"
+- "eslint-plugin-babel": "^5.3.0"
+- "eslint-plugin-import": "^2.18.2"
+- "eslint-plugin-node": "^9.1.0"
+- "eslint-plugin-react": "^7.14.3"
+- "eslint-plugin-react-hooks": "^1.7.0"
+
+## 安装
+`yarn add eslint @mjolnir/eslint-config -D`
+
+or
+
+`npm i eslint @mjolnir/eslint-config -D`
+
+## 配置
 ### es6 (默认)
-`npm i -D @mjolnir/eslint-config eslint eslint-plugin-import`
-
-#### 配置
 ```json
 {
   "extends": [
@@ -19,9 +34,6 @@
 
 
 ### Node.js
-`npm i -D @mjolnir/eslint-config eslint eslint-plugin-node`
-
-#### 配置
 ```json
 {
   "extends": [
@@ -31,9 +43,6 @@
 ```
 
 ### Babel (ES)
-`npm i -D @mjolnir/eslint-config eslint eslint-plugin-import babel-eslint eslint-plugin-babel`
-
-#### 配置
 ```json
 {
   "extends": [
@@ -43,9 +52,6 @@
 ```
 
 ### TypeScript
-`npm i -D @mjolnir/eslint-config eslint eslint-plugin-import @typescript-eslint/parser @typescript-eslint/eslint-plugin`
-
-#### 配置
 ```json
 {
   "extends": [
@@ -55,9 +61,6 @@
 ```
 
 ### React
-`npm i -D @mjolnir/eslint-config eslint eslint-plugin-import babel-eslint eslint-plugin-babel eslint-plugin-react eslint-plugin-react-hook`
-
-#### 配置
 ```json
 {
   "extends": [
@@ -67,12 +70,7 @@
 }
 ```
 
-
-
 ### React with TypeScript
-`npm i -D @mjolnir/eslint-config eslint eslint-plugin-import @typescript-eslint/parser @typescript-eslint/eslint-plugin eslint-plugin-react eslint-plugin-react-hook`
-
-#### 配置
 ```json
 {
   "extends": [
@@ -83,9 +81,10 @@
 ```
 
 ### jest 环境
-`npm i -D @mjolnir/eslint-config eslint eslint-plugin-jest`
-
-#### 配置
 ```json
-
+{
+  "extends": [
+    "@mjolnir/eslint-config/jest"
+  ]
+}
 ```

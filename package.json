@@ -12,7 +12,6 @@
     "cross-env": "^5.2.0",
     "eslint": "^6.1.0",
     "eslint-config-prettier": "^6.0.0",
-    "eslint-plugin-node": "^9.1.0",
     "eslint-plugin-prettier": "^3.1.0",
     "lerna": "^3.15.0",
     "lerna-changelog": "^0.8.2",

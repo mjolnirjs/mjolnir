@@ -1,0 +1,28 @@
+{
+  "name": "@mjolnir/babel-preset",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mjolnirjs/mjolnir/tree/master/packages/babel-preset"
+  },
+  "homepage": "https://github.com/mjolnirjs/mjolnir/tree/master/packages/babel-preset",
+  "bugs": {
+    "url": "https://github.com/mjolnirjs/mjolnir/issues"
+  },
+  "scripts": {},
+  "keywords": [
+    "babel",
+    "config",
+    "javascript"
+  ],
+  "license": "MIT",
+  "peerDependencies": {},
+  "publishConfig": {
+    "access": "public"
+  },
+  "engines": {
+    "node": ">=8.0.0"
+  }
+}

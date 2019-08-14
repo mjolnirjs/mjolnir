@@ -1,0 +1,22 @@
+{
+  "name": "@mjolnir/tsconfig",
+  "version": "0.0.1",
+  "description": "> TODO: description",
+  "homepage": "https://github.com/mjolnirjs/mjolnir/tree/master/packages/tsconfig#readme",
+  "license": "MIT",
+  "main": "base.json",
+  "files": [],
+  "publishConfig": {
+    "access": "public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mjolnirjs/mjolnir.git"
+  },
+  "scripts": {
+    "test": "echo \"Error: run tests from root\" && exit 1"
+  },
+  "bugs": {
+    "url": "https://github.com/mjolnirjs/mjolnir/issues"
+  }
+}

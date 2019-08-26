@@ -3,5 +3,9 @@
     "config:base",
     ":preserveSemverRanges",
     "schedule:weekly"
-  ]
+  ],
+  "automerge": true,
+  "major": {
+    "automerge": false
+  }
 }

@@ -7,14 +7,18 @@
   "devDependencies": {
     "@babel/cli": "^7.5.5",
     "@babel/core": "^7.5.5",
+    "@commitlint/cli": "^8.1.0",
+    "@commitlint/config-conventional": "^8.1.0",
     "@mjolnir/babel-preset": "link:packages/babel-preset",
     "@mjolnir/eslint-config": "link:packages/eslint-config",
     "cross-env": "^5.2.0",
     "eslint": "^6.1.0",
     "eslint-config-prettier": "^6.0.0",
     "eslint-plugin-prettier": "^3.1.0",
+    "husky": "^3.0.4",
     "lerna": "^3.15.0",
     "lerna-changelog": "^0.8.2",
+    "lint-staged": "^9.2.4",
     "prettier": "^1.17.1",
     "typescript": "^3.5.3"
   },

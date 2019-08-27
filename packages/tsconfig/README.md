@@ -17,3 +17,12 @@ add `extends` in your tsconfig.json:
   ...
 }
 ```
+
+
+### react env
+
+```json
+{
+  "extends": "@mjolnir/tsconfig/react.json"
+}
+```

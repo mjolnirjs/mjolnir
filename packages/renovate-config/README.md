@@ -9,6 +9,6 @@ add below to `renovate.json`:
 
 ```json
 {
-  "extends": ["@mjolnir/renovate-config"]
+  "extends": ["@mjolnir"]
 }
 ```

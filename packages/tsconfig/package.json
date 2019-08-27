@@ -1,7 +1,7 @@
 {
   "name": "@mjolnir/tsconfig",
   "version": "0.0.2",
-  "description": "",
+  "description": "shareable typescript config",
   "homepage": "https://github.com/mjolnirjs/mjolnir/tree/master/packages/tsconfig#readme",
   "license": "MIT",
   "main": "tsconfig.json",

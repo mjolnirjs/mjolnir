@@ -6,8 +6,8 @@ module.exports = {
       {
         react: false,
         typescript: true,
-        modules: "commonjs"
-      }
-    ]
-  ]
+        modules: 'commonjs',
+      },
+    ],
+  ],
 };

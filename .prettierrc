@@ -1,6 +1,18 @@
 {
   "$schema": "http://json.schemastore.org/prettierrc",
-  "printWidth": 80,
+  "printWidth": 100,
   "singleQuote": true,
-  "arrowParens": "always"
+  "trailingComma": "all",
+  "htmlWhitespaceSensitivity": "ignore",
+  "overrides": [
+    {
+      "files": [
+        ".*rc",
+        "*rc.json"
+      ],
+      "options": {
+        "parser": "json-stringify"
+      }
+    }
+  ]
 }

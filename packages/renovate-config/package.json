@@ -1,6 +1,6 @@
 {
   "name": "@mjolnir/renovate-config",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "",
   "homepage": "https://github.com/mjolnirjs/mjolnir/tree/master/packages/renovate-config#readme",
   "license": "MIT",

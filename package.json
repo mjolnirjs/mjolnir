@@ -1,5 +1,7 @@
 {
-  "name": "root",
+  "$schema": "http://json.schemastore.org/package",
+  "name": "mjolnir",
+  "description": "",
   "private": true,
   "workspaces": [
     "packages/*"

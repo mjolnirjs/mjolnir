@@ -1,9 +1,14 @@
 {
-  "changelog": {
-    "repo": "mjolnirjs/mjolnir",
-    "cacheDir": ".changelog"
-  },
+  "$schema": "http://json.schemastore.org/lerna",
   "npmClient": "yarn",
   "version": "independent",
-  "useWorkspaces": true
+  "useWorkspaces": true,
+  "command": {
+    "version": {
+      "conventionalCommits": true
+    },
+    "publish": {
+      "message": "chore(release): publish"
+    }
+  }
 }

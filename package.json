@@ -13,6 +13,7 @@
     "@commitlint/config-conventional": "^8.1.0",
     "@mjolnir/babel-preset": "link:packages/babel-preset",
     "@mjolnir/eslint-config": "link:packages/eslint-config",
+    "@mjolnir/prettier-config": "link:packages/prettier-config",
     "cross-env": "^5.2.0",
     "eslint": "^6.1.0",
     "eslint-config-prettier": "^6.0.0",

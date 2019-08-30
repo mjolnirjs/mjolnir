@@ -1,7 +1,6 @@
 'use strict';
 
 module.exports = {
-  printWidth: 100,
   singleQuote: true,
   trailingComma: 'all',
   htmlWhitespaceSensitivity: 'ignore',
@@ -10,6 +9,13 @@ module.exports = {
       files: ['.*rc', '*.json'],
       options: {
         parser: 'json-stringify',
+      },
+    },
+    {
+      // special file use jsonc format
+      files: ['tsconfig.json', 'tsconfig.*.json'],
+      options: {
+        parser: 'json',
       },
     },
   ],

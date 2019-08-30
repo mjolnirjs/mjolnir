@@ -17,5 +17,8 @@
   },
   "bugs": {
     "url": "https://github.com/mjolnirjs/mjolnir/issues"
+  },
+  "peerDependencies": {
+    "prettier": "^1.17.1"
   }
 }

@@ -13,7 +13,19 @@ module.exports = {
     },
     {
       // special file use jsonc format
-      files: ['tsconfig.json', 'tsconfig.*.json', '.vscode/*.json'],
+      files: [
+        '.vscode/*.json',
+        'jsconfig.json',
+        'tsconfig.json',
+        'tsconfig.*.json',
+        'tsconfig-*.json',
+        'tsconfig.json',
+        '.babelrc',
+        '.eslintrc',
+        '.eslintrc.json',
+        'tslint.json',
+        'tslint.*.json',
+      ],
       options: {
         parser: 'json',
       },

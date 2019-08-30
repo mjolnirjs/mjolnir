@@ -8,7 +8,7 @@ module.exports = {
     './errors',
     './es6',
     './style',
-    './variables'
+    './variables',
   ].map(require.resolve),
-  rules: {}
+  rules: {},
 };

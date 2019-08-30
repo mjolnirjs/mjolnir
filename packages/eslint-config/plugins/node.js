@@ -5,6 +5,6 @@ module.exports = {
   extends: ['plugin:node/recommended'],
   rules: {
     // commonjs or node env, should use global strict model
-    strict: ['error', 'global']
-  }
+    strict: ['error', 'global'],
+  },
 };

@@ -31,7 +31,7 @@ module.exports = declare((api, opts) => {
     require('@babel/plugin-syntax-dynamic-import'),
     require('@babel/plugin-syntax-import-meta'),
     [require('@babel/plugin-proposal-class-properties'), { loose: true }],
-    require('@babel/plugin-proposal-json-strings')
+    require('@babel/plugin-proposal-json-strings'),
   ];
 
   const presets = [
@@ -40,9 +40,9 @@ module.exports = declare((api, opts) => {
       require('@babel/preset-env'),
       {
         //TODO: how about other opts
-        modules // default to false, webpack takes care of modules
-      }
-    ]
+        modules, // default to false, webpack takes care of modules
+      },
+    ],
   ];
 
   if (typescript) presets.push(require('@babel/preset-typescript'));
@@ -51,22 +51,22 @@ module.exports = declare((api, opts) => {
     presets.push([
       require('@babel/preset-react'),
       {
-        development: env
-      }
+        development: env,
+      },
     ]);
     if (env === 'production') {
       // Remove PropTypes from production build
       plugins.push([
         require('babel-plugin-transform-react-remove-prop-types'),
         {
-          removeImport: true
-        }
+          removeImport: true,
+        },
       ]);
     }
   }
 
   return {
     presets,
-    plugins
+    plugins,
   };
 });

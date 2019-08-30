@@ -5,7 +5,7 @@ module.exports = {
   root: true, // limit ESLint to a specific project
   env: {
     browser: true,
-    es6: true // also enable ecmaVersion: 6
+    es6: true, // also enable ecmaVersion: 6
   },
   parserOptions: {
     ecmaVersion: 2018, // same as 9
@@ -13,8 +13,8 @@ module.exports = {
     ecmaFeatures: {
       globalReturn: false,
       impliedStrict: true,
-      jsx: true
-    }
+      jsx: true,
+    },
   },
-  extends: ['./rules', './plugins/import'].map(require.resolve)
+  extends: ['./rules', './plugins/import'].map(require.resolve),
 };

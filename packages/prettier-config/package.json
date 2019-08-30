@@ -1,0 +1,24 @@
+{
+  "name": "@mjolnir/prettier-config",
+  "version": "0.0.0",
+  "description": "",
+  "homepage": "https://github.com/mjolnirjs/mjolnir/tree/master/packages/prettier-config#readme",
+  "license": "MIT",
+  "publishConfig": {
+    "access": "public"
+  },
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mjolnirjs/mjolnir.git"
+  },
+  "scripts": {
+    "test": "echo \"Error: run tests from root\" && exit 1"
+  },
+  "bugs": {
+    "url": "https://github.com/mjolnirjs/mjolnir/issues"
+  },
+  "peerDependencies": {
+    "prettier": "^1.17.1"
+  }
+}

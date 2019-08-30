@@ -1,6 +1,6 @@
 'use strict';
 
-module.exports = (api) => {
+module.exports = api => {
   api.cache(false);
 
   return {
@@ -10,9 +10,9 @@ module.exports = (api) => {
         '@mjolnir/babel-preset',
         {
           react: false,
-          typescript: false
-        }
-      ]
-    ]
+          typescript: false,
+        },
+      ],
+    ],
   };
 };

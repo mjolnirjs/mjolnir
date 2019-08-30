@@ -2,11 +2,13 @@
   "compilerOptions": {
     "module": "es6",
     "target": "es5",
-    "lib": ["esnext"],
+    "lib": [
+      "esnext"
+    ],
     "declaration": true,
     "outDir": "dist",
     "esModuleInterop": true,
     "moduleResolution": "node",
-    "strict": true,
+    "strict": true
   }
 }

@@ -1,3 +1,4 @@
+// https://github.com/benmosher/eslint-plugin-import
 module.exports = {
   plugins: ['import'],
   rules: {

@@ -1,5 +1,10 @@
+// https://github.com/yannickcr/eslint-plugin-react#recommended
 module.exports = {
-  extends: ['prettier/react'],
-  plugins: ['react'],
+  extends: ['plugin:react/recommended', 'prettier/react'],
   rules: {},
+  settings: {
+    react: {
+      version: 'detect',
+    },
+  },
 };

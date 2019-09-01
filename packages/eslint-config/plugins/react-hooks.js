@@ -1,3 +1,4 @@
+// https://www.npmjs.com/package/eslint-plugin-react-hooks
 module.exports = {
   plugins: ['react-hooks'],
   rules: {

@@ -13,12 +13,20 @@ module.exports = {
     'plugin:import/typescript',
     'prettier/@typescript-eslint',
   ],
-  rules: {},
+  rules: {
+    '@typescript-eslint/explicit-function-return-type': 0,
+  },
   parserOptions: {
     project: fs.existsSync(ESLINT_TSCONFIG)
       ? ESLINT_TSCONFIG
       : fs.existsSync(BASE_TSCONFIG)
       ? BASE_TSCONFIG
       : require.resolve('@mjolnir/tsconfig'),
+  },
+  settings: {
+    // shared settings for eslint-plugin-node
+    node: {
+      tryExtensions: ['.js', '.jsx', '.json', '.ts', '.tsx'],
+    },
   },
 };

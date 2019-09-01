@@ -6,8 +6,9 @@ module.exports = {
   react: require('./react'),
   mdx: require('./mdx'),
   recommended: [
-    require('./typescript'),
     require('./babel'),
+    require('./typescript'),
+    require('./react'),
     require('./jest'),
     require('./mdx'),
   ],

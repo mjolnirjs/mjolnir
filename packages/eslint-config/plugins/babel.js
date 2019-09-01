@@ -1,4 +1,4 @@
-// eslint-plugin-babel has no recommend config
+// https://github.com/babel/eslint-plugin-babel
 module.exports = {
   extends: ['prettier/babel'],
   parser: 'babel-eslint',

@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.4.0](https://github.com/mjolnirjs/mjolnir/tree/master/packages/eslint-config/compare/@mjolnir/eslint-config@0.3.0...@mjolnir/eslint-config@0.4.0) (2019-09-01)
+
+### Features
+
+- update react, typescript rules ([#23](https://github.com/mjolnirjs/mjolnir/tree/master/packages/eslint-config/issues/23)) ([112ecc9](https://github.com/mjolnirjs/mjolnir/tree/master/packages/eslint-config/commit/112ecc9))
+
 # [0.3.0](https://github.com/mjolnirjs/mjolnir/tree/master/packages/eslint-config/compare/@mjolnir/eslint-config@0.2.0...@mjolnir/eslint-config@0.3.0) (2019-09-01)
 
 ### Features

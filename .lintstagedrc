@@ -4,7 +4,7 @@
     "eslint --fix",
     "git add"
   ],
-  "**/.*rc": [
+  ".*rc": [
     "prettier --write",
     "git add"
   ],

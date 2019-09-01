@@ -43,7 +43,7 @@ or
 
 适用于 web 开发, 基于 ES6 Module 模块化方式。
 
-```json
+```jsonc
 {
   "extends": ["@mjolnir"] // same as @mjolnir/eslint-config
 }
@@ -79,9 +79,7 @@ or
 const { recommended } = require('@mjolnir/eslint-config/overrides');
 {
   ...,
-  "overrides": [
-    ...recommended
-  ]
+  "overrides": recommended
 }
 ```
 

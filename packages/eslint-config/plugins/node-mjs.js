@@ -2,7 +2,9 @@
 module.exports = {
   // considers all files as ES Modules.
   extends: ['plugin:node/recommended-module'],
-  rules: {},
+  rules: {
+    'node/no-unpublished-require': 'off',
+  },
   // some config file also use commonjs module
   globals: {
     __dirname: 'readonly',

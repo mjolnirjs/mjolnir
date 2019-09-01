@@ -1,21 +1,36 @@
 # @mjolnir/eslint-config
 
-适用于 node/es/ts/react 环境下的 eslint 配置集合。
+适用于 web 开发的 eslint 配置集合:
+
+- 内置了对 node, markdown, pretier 的 lint。
+- 通过 overrides, 支持 babel/typescript/react/jest/mdx 的 lint.
 
 ## 说明
-### requirement
-- eslint@6
 
-### 包含的插件
-- "@typescript-eslint/eslint-plugin": "^1.13.0"
-- "@typescript-eslint/parser": "^1.13.0"
-- "eslint-plugin-babel": "^5.3.0"
-- "eslint-plugin-import": "^2.18.2"
-- "eslint-plugin-node": "^9.1.0"
-- "eslint-plugin-react": "^7.14.3"
-- "eslint-plugin-react-hooks": "^1.7.0"
+## requirement
+
+- eslint
+- prettier
+
+### dependencies
+
+```
+@typescript-eslint/eslint-plugin
+@typescript-eslint/parser
+babel-eslint
+eslint-plugin-babel
+eslint-plugin-import
+eslint-plugin-jest
+eslint-plugin-node
+eslint-plugin-react
+eslint-plugin-react-hooks
+eslint-config-prettier
+eslint-plugin-prettier
+eslint-plugin-mdx
+```
 
 ## 安装
+
 `yarn add eslint @mjolnir/eslint-config -D`
 
 or
@@ -23,68 +38,117 @@ or
 `npm i eslint @mjolnir/eslint-config -D`
 
 ## 配置
-### es6 (默认)
-```json
+
+### es6/node (默认)
+
+适用于 web 开发, 基于 ES6 Module 模块化方式。
+
+```jsonc
 {
-  "extends": [
-    "@mjolnir/eslint-config"
-  ]
+  "extends": ["@mjolnir"] // same as @mjolnir/eslint-config
 }
 ```
 
+### Node.js with commonJS
 
-### Node.js
+纯 node 项目, 使用 commonJS 模块化方式。
+
 ```json
 {
-  "extends": [
-    "@mjolnir/eslint-config/node"
-  ]
+  "extends": ["@mjolnir/eslint-config/node"]
+}
+```
+
+## overrides 配置
+
+通过提供 `overrides` 的方式，增强对 `babel`, `typescript`, react`,`jest`项目的支持。 配置文件需要使用`.eslintrc.js` 格式。
+
+### recommended
+
+推荐的 override 配置项，包含：
+
+- babel
+- typescript
+- react
+- jest
+- mdx
+
+适用于 Jest 项目，处理的文件类型: `**/*.{spec,test}.{js,jsx,ts,tsx}`.
+
+```js
+const { recommended } = require('@mjolnir/eslint-config/overrides');
+{
+  ...,
+  "overrides": recommended
 }
 ```
 
 ### Babel (ES)
-```json
+
+适用 babel 的项目, 处理的文件为: `**/*.{js, jsx}`.
+
+```js
+const { babel } = require('@mjolnir/eslint-config/overrides');
 {
-  "extends": [
-    "@mjolnir/eslint-config/babel"
+  ...,
+  "overrides": [
+    babel
   ]
 }
 ```
 
 ### TypeScript
-```json
+
+适用 typescript 的项目, 处理的文件为: `**/*.ts?(x)`.
+
+```js
+const { typescript } = require('@mjolnir/eslint-config/overrides');
 {
-  "extends": [
-    "@mjolnir/eslint-config/typescript"
+  ...,
+  "overrides": [
+    typescript
   ]
 }
 ```
 
 ### React
-```json
+
+适用于 react 项目, 处理的文件为: `**/*.{js,jsx,ts,tsx}`.
+
+```js
+const { react } = require('@mjolnir/eslint-config/overrides');
 {
-  "extends": [
-    "@mjolnir/eslint-config/babel",
-    "@mjolnir/eslint-config/react"
+  ...,
+  "overrides": [
+    react
   ]
 }
 ```
 
-### React with TypeScript
-```json
+### Jest
+
+适用于 Jest 项目，处理的文件类型: `**/*.{spec,test}.{js,jsx,ts,tsx}`.
+
+```js
+const { jest } = require('@mjolnir/eslint-config/overrides');
 {
-  "extends": [
-    "@mjolnir/eslint-config/typescript",
-    "@mjolnir/eslint-config/react"
+  ...,
+  "overrides": [
+    jest
   ]
 }
 ```
 
-### jest 环境
-```json
+### mdx
+
+适用于 mdx 文件，处理的文件类型: `*.mdx`.
+
+```js
+const { mdx } = require('@mjolnir/eslint-config/overrides');
 {
-  "extends": [
-    "@mjolnir/eslint-config/jest"
+  ...,
+  "overrides": [
+    mdx
   ]
 }
 ```

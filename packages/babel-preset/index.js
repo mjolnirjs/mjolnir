@@ -1,5 +1,3 @@
-'use strict';
-
 const { declare } = require('@babel/helper-plugin-utils');
 const env = process.env.NODE_ENV;
 

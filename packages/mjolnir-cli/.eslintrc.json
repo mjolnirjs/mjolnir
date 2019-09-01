@@ -1,7 +1,4 @@
 {
-  "extends": [
-    "@mjolnir/eslint-config/typescript",
-    "plugin:prettier/recommended"
-  ],
+  "extends": ["@mjolnir/eslint-config/node"],
   "rules": {}
 }

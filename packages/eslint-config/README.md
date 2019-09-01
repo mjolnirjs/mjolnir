@@ -1,19 +1,18 @@
 # @mjolnir/eslint-config
 
-适用于 node/es/ts/react 环境下的 eslint 配置集合。 包含与 prettier 的结合。
+适用于 web 开发的 eslint 配置集合:
+
+- 内置了对 node, markdown, pretier 的 lint。
+- 通过 overrides, 支持 babel/typescript/react/jest/mdx 的 lint.
+
+## 说明
 
 ## requirement
 
 - eslint
 - prettier
 
-## 说明
-
-### requirement
-
-- eslint@6
-
-### 包含的插件
+### dependencies
 
 ```
 @typescript-eslint/eslint-plugin
@@ -27,6 +26,7 @@ eslint-plugin-react
 eslint-plugin-react-hooks
 eslint-config-prettier
 eslint-plugin-prettier
+eslint-plugin-mdx
 ```
 
 ## 安装

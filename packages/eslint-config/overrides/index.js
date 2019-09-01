@@ -4,5 +4,11 @@ module.exports = {
   babel: require('./babel'),
   jest: require('./jest'),
   react: require('./react'),
-  recommended: [],
+  mdx: require('./mdx'),
+  recommended: [
+    require('./typescript'),
+    require('./babel'),
+    require('./jest'),
+    require('./mdx'),
+  ],
 };

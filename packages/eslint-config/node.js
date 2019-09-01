@@ -12,7 +12,10 @@ module.exports = {
       impliedStrict: true,
     },
   },
-  extends: ['./rules', './plugins/node-cjs', './plugins/prettier'].map(
-    require.resolve,
-  ),
+  extends: [
+    './rules',
+    './plugins/node-cjs',
+    './plugins/markdown',
+    './plugins/prettier',
+  ].map(require.resolve),
 };

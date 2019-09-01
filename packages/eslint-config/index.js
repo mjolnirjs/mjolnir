@@ -16,8 +16,9 @@ module.exports = {
   },
   extends: [
     './rules',
-    './plugins/import',
     './plugins/node-mjs',
+    './plugins/import',
+    './plugins/markdown',
     './plugins/prettier',
   ].map(require.resolve),
 };

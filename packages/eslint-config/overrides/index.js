@@ -4,4 +4,5 @@ module.exports = {
   babel: require('./babel'),
   jest: require('./jest'),
   react: require('./react'),
+  recommended: [],
 };

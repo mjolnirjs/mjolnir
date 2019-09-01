@@ -1,3 +1,5 @@
 # by default, .eslintrc will ignored
 !.eslintrc.js
+
+# build assets should not lint
 dist/

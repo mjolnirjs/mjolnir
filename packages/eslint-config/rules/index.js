@@ -1,5 +1,3 @@
-'use strict';
-
 // 基于 eslint:recommend, 自定义的规则按类别维护
 module.exports = {
   extends: [
@@ -9,6 +7,6 @@ module.exports = {
     './es6',
     './style',
     './variables',
+    './node',
   ].map(require.resolve),
-  rules: {},
 };

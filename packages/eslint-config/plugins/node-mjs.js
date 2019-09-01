@@ -4,6 +4,7 @@ module.exports = {
   extends: ['plugin:node/recommended-module'],
   rules: {
     'node/no-unpublished-require': 'off',
+    'node/no-extraneous-require': 'off',
   },
   // some config file also use commonjs module
   globals: {

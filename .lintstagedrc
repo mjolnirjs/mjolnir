@@ -8,7 +8,7 @@
     "prettier --write",
     "git add"
   ],
-  "*.{gql,html,json,md,mdx,vue,yaml,yml}": [
+  "*.{html,json,md,mdx,yaml,yml}": [
     "prettier --write",
     "git add"
   ]
